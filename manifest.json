@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "KVM Auto Login Helper",
+  "version": "1.1.0",
+  "description": "Auto-fills repetitive authenticated logins for approved local lab KVM web interfaces.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "KVM Auto Login Helper"
+  }
+}

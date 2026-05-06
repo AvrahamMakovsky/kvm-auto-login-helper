@@ -4,6 +4,11 @@ Chrome Manifest V3 extension that auto-fills repetitive authenticated logins for
 
 This tool was created to reduce repeated manual logins in lab environments where KVM web sessions often disconnect and ask for credentials again.
 
+## Related repositories
+
+- [SmallScripts](https://github.com/AvrahamMakovsky/SmallScripts) - Small collection of utility scripts for everyday technical work, lab support, and system maintenance.
+
+  
 ## What it does
 
 - Detects Raritan-style KVM login pages using multiple page indicators.

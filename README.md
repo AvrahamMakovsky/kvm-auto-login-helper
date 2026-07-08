@@ -3,11 +3,6 @@
 Chrome Manifest V3 extension that auto-fills repetitive authenticated logins for approved local lab KVM web interfaces.
 
 This tool was created to reduce repeated manual logins in lab environments where KVM web sessions often disconnect and ask for credentials again.
-
-## Related repositories
-
-- [SmallScripts](https://github.com/AvrahamMakovsky/SmallScripts) - Small collection of utility scripts for everyday technical work, lab support, and system maintenance.
-
   
 ## What it does
 
@@ -51,6 +46,13 @@ Do not publish real internal hostnames, IP addresses, usernames, passwords, scre
 The extension uses broad Chrome content-script URL matching in the manifest, then applies its own runtime host allowlist before doing anything.
 
 This is because Chrome extension manifest match patterns do not support CIDR-style private-network ranges such as `10.0.0.0/8`, and wildcard hosts are restricted by Chrome's match-pattern rules.
+
+## Related repositories
+
+- [infra-support-tools](https://github.com/AvrahamMakovsky/infra-support-tools) - small infrastructure/support scripts and utilities for everyday technical work.
+- [google-drive-ai-vault](https://github.com/AvrahamMakovsky/google-drive-ai-vault) - a ChatGPT + Google Drive workflow template for keeping project context, decisions, review loops, and reusable prompts organized across long-running work.
+
+These are separate repositories and are not required for using this extension.
 
 ## Author
 
